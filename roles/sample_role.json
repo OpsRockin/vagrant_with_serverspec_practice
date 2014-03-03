@@ -1,0 +1,6 @@
+{
+  "name": "sample_role",
+  "run_list": [
+    "recipe[dummy::default]"
+  ]
+}
