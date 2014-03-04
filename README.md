@@ -1,5 +1,10 @@
 # Vagrant with chefzero Example
 
+## Overview
+
+![](_images/vagratn_with_chef-zero.png)
+
+
 ## Requirements
 
 - Vagrant
