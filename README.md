@@ -1,4 +1,4 @@
-# Vagrant with chefzero Example
+# Vagrant with Chef-zero Example
 
 ## Overview
 
