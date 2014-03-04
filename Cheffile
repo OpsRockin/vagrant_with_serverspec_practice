@@ -4,6 +4,6 @@
 site 'http://community.opscode.com/api/v1'
 
 ## Development
-cookbook 'chef-zero'
+cookbook 'omnibus_serverspec'
 cookbook 'simplelog_handler'
 
