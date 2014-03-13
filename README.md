@@ -24,7 +24,7 @@ Install requements using chocolatey.
 
 or 
 
-> http://rubyinstaller.org/downloads/
+> http://rubyinstaller.org/downloads/  
 > http://code.google.com/p/msysgit/
 
 ----
