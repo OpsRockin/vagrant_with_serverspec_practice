@@ -7,7 +7,7 @@
 - Git
 - Vagrant
 - vagrant-omnibus(plugin)
-
+- ssh client(Windows)
 
 ## Setup
 
