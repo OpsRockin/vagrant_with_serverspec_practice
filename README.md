@@ -27,6 +27,8 @@ or
 > http://rubyinstaller.org/downloads/
 > http://code.google.com/p/msysgit/
 
+----
+
 Create serverspec VM.
 
 ```
