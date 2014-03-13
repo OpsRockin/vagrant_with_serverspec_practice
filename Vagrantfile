@@ -25,6 +25,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.define :serverspec do |svs|
     svs.vm.hostname = 'serverspec'
     svs.vm.network :private_network, ip: '10.33.34.100'
+    config.vm.network :forwarded_port, guest: 80, host: 8080
+    
     box_and_omnibus(svs)
 
     config.vm.provider :virtualbox do |vb|
