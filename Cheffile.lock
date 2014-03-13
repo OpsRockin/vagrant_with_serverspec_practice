@@ -1,0 +1,10 @@
+SITE
+  remote: http://community.opscode.com/api/v1
+  specs:
+    omnibus_serverspec (0.1.0)
+    simplelog_handler (1.0.0)
+
+DEPENDENCIES
+  omnibus_serverspec (>= 0)
+  simplelog_handler (>= 0)
+
