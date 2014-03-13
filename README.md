@@ -3,6 +3,8 @@
 
 ## Requirements
 
+- Ruby
+- Git
 - Vagrant
 - vagrant-omnibus(plugin)
 
@@ -13,6 +15,17 @@
 bundle
 librarian-chef install
 ```
+
+### Hint for Windows
+
+Install requements using chocolatey.
+
+> [https://chocolatey.org/](https://chocolatey.org/)
+
+or 
+
+> http://rubyinstaller.org/downloads/
+> http://code.google.com/p/msysgit/
 
 Create serverspec VM.
 
