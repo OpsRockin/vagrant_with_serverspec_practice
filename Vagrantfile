@@ -43,6 +43,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.define :sandbox do |config|
     config.vm.hostname = 'sandbox'
     config.vm.network :private_network, ip: '10.33.34.101'
+    config.vm.network :forwarded_port, guest: 80, host: 8080
     box_and_omnibus(config)
 
     config.vm.provider :virtualbox do |vb|
