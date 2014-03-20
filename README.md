@@ -79,6 +79,7 @@ Add `insecure_private_key` to ssh-agent
 
 ```
 eval `ssh-agent`
+chmod 0400 /vagrant/tmp/insecure_private_key
 ssh-add /vagrant/tmp/insecure_private_key 
 ```
 
