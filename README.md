@@ -79,8 +79,9 @@ Add `insecure_private_key` to ssh-agent
 
 ```
 eval `ssh-agent`
-chmod 0400 /vagrant/tmp/insecure_private_key
-ssh-add /vagrant/tmp/insecure_private_key 
+cp /vagrant/tmp/insecure_private_key $HOME/
+chmod 0400 $HOME/insecure_private_key
+ssh-add $HOME/insecure_private_key
 ```
 
 Execute `serverspec-init`, default ipaddress of sandbox is '10.33.34.101'.
