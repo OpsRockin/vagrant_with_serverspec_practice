@@ -41,9 +41,12 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   ## Sandbox VM
   config.vm.define :sandbox do |config|
+    config.vm.box = 'opscode-centos-6.5'
+    config.vm.box_url = 'http://opscode-vm-bento.s3.amazonaws.com/vagrant/virtualbox/opscode_centos-6.5_chef-provisionerless.box'
+  config.omnibus.chef_version = :latest
     config.vm.hostname = 'sandbox'
     config.vm.network :private_network, ip: '10.33.34.101'
-    box_and_omnibus(config)
+#    box_and_omnibus(config)
 
     config.vm.provider :virtualbox do |vb|
       vb.customize ["modifyvm", :id, "--cpus", "2"]
