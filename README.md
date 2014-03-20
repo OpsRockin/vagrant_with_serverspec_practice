@@ -14,6 +14,7 @@
 ```
 bundle
 librarian-chef install
+vagran plugin install vagrant-omnibus
 ```
 
 ### Hint for Windows
@@ -64,6 +65,9 @@ copy Vagrant `insecure_private_key` to tmp/.
 ```
 cp ~/.vagrant.d/insecure_private_key tmp/
 ```
+
+or `$HOME\.vagrant.d\insecure_private_key` (Microsofrt Windows)
+
 
 logg in to serverspec VM.
 
