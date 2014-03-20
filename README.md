@@ -85,6 +85,8 @@ ssh-add /vagrant/tmp/insecure_private_key
 Execute `serverspec-init`, default ipaddress of sandbox is '10.33.34.101'.
 
 ```
+$ mkdir -p /vagrant/tmp/serverspec
+$ cd /vagrant/tmp/serverspec
 $ serverspec-init
 Select OS type:
 
