@@ -14,7 +14,7 @@
 ```
 bundle
 librarian-chef install
-vagran plugin install vagrant-omnibus
+vagrant plugin install vagrant-omnibus
 ```
 
 ### Hint for Windows
@@ -27,6 +27,10 @@ or
 
 > http://rubyinstaller.org/downloads/  
 > http://code.google.com/p/msysgit/
+
+Install vagrant-proxyconf if need.
+
+vagrant plugin install vagrant-proxyconf
 
 ----
 
