@@ -12,6 +12,7 @@
 ## Setup
 
 ```
+gem install bundler --no-ri --no-rdoc
 bundle
 librarian-chef install
 vagrant plugin install vagrant-omnibus
