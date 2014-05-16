@@ -13,7 +13,11 @@ end
 def setup_chef_solo(config, &block)
   config.vm.provision :chef_solo do |chef|
     chef.log_level = :info
-    chef.cookbooks_path = ['./cookbooks', './site-cookbooks']
+    if File.exists?('./site-cookbooks')
+      chef.cookbooks_path = ['./cookbooks', './site-cookbooks']
+    else
+      chef.cookbooks_path = ['./cookbooks']
+    end
     chef.add_recipe 'recipe[simplelog_handler::default]'
 
     yield(chef) if block_given?

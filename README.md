@@ -54,6 +54,7 @@ vagrant up sandbox
 Create cookbook for sandbox.
 
 ```
+mkdir site-cookbooks # or clone your repository.
 knife cookbook create hogehoge -o site-cookbooks/
 ```
 
