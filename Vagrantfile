@@ -21,6 +21,10 @@ def setup_chef_solo(config, &block)
 end
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
+  if Vagrant.has_plugin?("vagrant-proxyconf")
+    config.proxy.http  = ENV['http_proxy']  if ENV['http_proxy']
+    config.proxy.https = ENV['https_proxy'] if ENV['https_proxy']
+  end
   ## Serverspec VM
   config.vm.define :serverspec do |svs|
     svs.vm.hostname = 'serverspec'
