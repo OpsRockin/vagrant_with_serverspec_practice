@@ -3,3 +3,4 @@ cookbooks/
 .librarian/
 tmp/
 .vagrant/
+site-cookbooks/
