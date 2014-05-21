@@ -13,11 +13,7 @@ end
 def setup_chef_solo(config, &block)
   config.vm.provision :chef_solo do |chef|
     chef.log_level = :info
-    if File.exists?('./site-cookbooks')
-      chef.cookbooks_path = ['./cookbooks', './site-cookbooks']
-    else
-      chef.cookbooks_path = ['./cookbooks']
-    end
+    chef.cookbooks_path = ['./cookbooks', './site-cookbooks']
     chef.add_recipe 'recipe[simplelog_handler::default]'
 
     yield(chef) if block_given?
@@ -64,6 +60,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
     setup_chef_solo(config) do |chef|
       chef.add_recipe 'recipe[dummy::default]'
+      chef.add_recipe 'recipe[nri_shared::default]'
       chef.json = {
       }
     end
