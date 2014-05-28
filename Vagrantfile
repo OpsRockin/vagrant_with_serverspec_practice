@@ -60,7 +60,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
     setup_chef_solo(config) do |chef|
       chef.add_recipe 'recipe[dummy::default]'
-      chef.add_recipe 'recipe[nri_shared::default]'
+      chef.add_recipe 'recipe[sample_shared::default]'
       chef.json = {
       }
     end
